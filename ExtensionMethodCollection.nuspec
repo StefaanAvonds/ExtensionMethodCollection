@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata>
+    <id>UsefulExtensionMethods</id>
+    <version>1.0.3</version>
+    <authors>Stefaan Avonds</authors>
+    <owners>Stefaan Avonds</owners>
+    <projectUrl>https://github.com/StefaanAvonds/ExtensionMethodCollection</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains some very useful extension-methods an some basic C#-components.</description>
+    <releaseNotes>Extra extension methods for DateTime (begin of year, end of year, random datetime).</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>extension method extension-methods usefulextensionmethods</tags>
+	<frameworkAssemblies>
+		<frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+		<frameworkAssembly assemblyName="mscorlib" targetFramework=".NETFramework4.5" />
+	</frameworkAssemblies>
+  </metadata>
+  <files>
+	<file src="ExtensionMethodCollection\bin\Release\UsefulExtensionMethods.dll" target="lib" />
+  </files>
+</package>

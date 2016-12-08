@@ -1,4 +1,5 @@
 ﻿using ExtensionMethodCollection.Extensions;
+using ExtensionMethodCollection.Translations;
 using System;
 
 namespace ExtensionMethodCollection
@@ -7,10 +8,13 @@ namespace ExtensionMethodCollection
     {
         static void Main(string[] args)
         {
-            int temp = 98413518;
-            int length = temp.IntLength();
+            var date = DateTime.Today.BeginOfYear();
+            Console.WriteLine($"Begin of current year: {date.ConvertToString(DateTimeTranslationOptions.DayMonthYearHourMinuteSecond)}");
+            date = DateTime.Today.EndOfYear();
+            Console.WriteLine($"End of current year: {date.ConvertToString(DateTimeTranslationOptions.DayMonthYearHourMinuteSecond)}");
+            date = DateTime.Today.BeginOfYear().GenerateRandomDateTime(DateTime.Today.EndOfYear());
+            Console.WriteLine($"Random day of current year: {date.ConvertToString(DateTimeTranslationOptions.DayMonthYearHourMinuteSecond)}");
 
-            Console.WriteLine($"The integer-value {temp} contains in total {length} amount of characters.");
             Console.ReadLine();
         }
     }
